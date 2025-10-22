@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/web-developer.png">
   <title>Joaquim Oliveira - Portfolio</title>
-  <link rel="stylesheet" href="../Portfolio/styles/LobbyPage.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -20,29 +21,29 @@
     </nav>
   </header>
 
-  <!-- perfil -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Olá<span class="dot">.</span></h1>
-      <h2>Me chamo Joaquim</h2>
-      <h3>Desenvolvedor Back-End</h3>
-      <div class="hero-buttons">
-        <button class="btn primary" src="https://wa.me/5585989089830">Tem algum projeto?</button>
-        <button class="btn secondary" id="baixarCV">Meu currículo</button>
+      <!-- perfil -->
+      <section id="home" class="hero">
+        <div class="hero-buttons">
+          <h1>Olá seja bem vindo ao meu Portfólio!</h1>
+      <a href="https://wa.me/5585989089830" target="_blank" class="btn primary">
+        Tem algum projeto?
+      </a>
 
-        <script>
+      <button class="btn secondary" id="baixarCV">Meu currículo</button>
+
+      <script>
         document.getElementById("baixarCV").addEventListener("click", function () {
-            const link = document.createElement("a");
-            link.href = "../curriculo/curriculo Joaquim.pdf"; 
-            link.download = "Curriculo-Joaquim.pdf"; 
-            link.click();
+          const link = document.createElement("a");
+          link.href = "curriculo/curriculo Joaquim Original.pdf"; 
+          link.download = "Curriculo-Joaquim.pdf"; 
+          link.click();
         });
-        </script>
+      </script>
+    </div>
 
-      </div>
     </div>
     <div class="hero-img">
-      <img src="../images/foto-perfil.jpg" alt="Joaquim">
+      <img src="/images/foto-perfil.jpg" alt="Joaquim">
     </div>
   </section>
 
@@ -106,20 +107,20 @@
   <div class="socials">
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/joaquim-oliveira-544151270" target="_blank">
-      <img src="../images/linkedin.ico" alt="LinkedIn" class="icon">
+      <img src="/images/linkedin.ico" alt="LinkedIn" class="icon">
     </a>
     <!-- GitHub -->
     <a href="https://github.com/joaquimoliveira22" target="_blank">
-      <img src="../images/github.ico" alt="GitHub" class="icon">
+      <img src="/images/github.ico" alt="GitHub" class="icon">
     </a>
     <!-- WhatsApp -->
     <a href="https://wa.me/5585989089830" target="_blank">
-      <img src="../images/whatsapp.ico" alt="WhatsApp" class="icon">
+      <img src="/images/whatsapp.ico" alt="WhatsApp" class="icon">
     </a>
   </div>
 </footer>
 
 
-  <script src="../Portfolio/scripts/LobbyPage.js  "></script>
+  <script src="script.js"></script>
 </body>
 </html>
